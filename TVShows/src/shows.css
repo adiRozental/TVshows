@@ -4,12 +4,12 @@
   color: #000000;
 }
 .all-movies-container.light table th {
-  background-color: #b2afaf;
+  background-color: #ebeaea;
 }
 
 
 .all-movies-container.light table tr:nth-child(even) {
-  background-color: #b2afaf;
+  background-color: #ebeaea;
   
 }
 

@@ -9,8 +9,6 @@ const AllMovies = () => {
   const [originalMovies, setOriginalMovies] = useState([]); // Full list of movies
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState({ genres: [], rating: '', language: '' }); // Filters
-  const [id, setId] = useState("1");
-  const [theme, setTheme] = useState('light'); // Theme state
   const [currentPage, setCurrentPage] = useState(1); // Current page for pagination
   const [moviesPerPage] = useState(14); // Movies per page
   const navigate = useNavigate();
@@ -22,7 +20,6 @@ const AllMovies = () => {
         const movieResponse = await axios.get('https://localhost:7169/api/shows');
         setMovies(movieResponse.data);
         setOriginalMovies(movieResponse.data);
-        console.log(movies)
       } catch (error) {
         console.error('Error fetching movies:', error);
       }
@@ -30,7 +27,7 @@ const AllMovies = () => {
 
 
     fetchMovies();
-  }, [id]);
+  }, []);
 
   useEffect(() => {
     handleFilter();
@@ -91,9 +88,7 @@ const AllMovies = () => {
   const currentMovies = movies.slice(indexOfFirstMovie, indexOfLastMovie);
 
   return (
-    <div className={`all-movies ${theme}`}>
-      
-
+    <div className={`all-movies`}>
       <div className="filter-bar">
         {/* Search Bar */}
         <div className="filter-group">
