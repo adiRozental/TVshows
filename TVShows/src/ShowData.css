@@ -1,0 +1,56 @@
+.show-data-page {
+
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.show-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.show-banner img {
+  width: 300px;
+  border-radius: 10px;
+}
+.show-info{
+  padding-bottom: 9%;
+
+}
+.show-info h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.show-info p {
+  margin: 5px 0;
+}
+
+.episodes-section {
+  margin-top: 30px;
+}
+
+.episodes-section h2 {
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #444;
+  text-align: left;
+}
+
+table th {
+  background-color: #222;
+}
+
+table tr:nth-child(even) {
+  background-color: #1c1c1c;
+}
