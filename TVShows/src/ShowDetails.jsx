@@ -36,7 +36,7 @@ const ShowData = () => {
         <div className="show-info">
           <h1>{movie.name}</h1>
           <p><strong>Premiere:</strong> {movie.premiered}</p>
-          <p><strong>Rating:</strong> {movie.rating?.average || "N/A"}</p>
+          <p><strong>Rating:</strong> {movie.rating || "N/A"}</p>
           <p><strong>Genres:</strong> {movie.genres.join(", ")}</p>
           <p>{movie.summary?.replace(/<[^>]+>/g, "")}</p>
         </div>
